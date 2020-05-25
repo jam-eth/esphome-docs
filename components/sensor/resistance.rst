@@ -54,7 +54,7 @@ Configuration variables:
   ``UPSTREAM``.
 - **resistor** (**Required**, float): The value of the resistor with a constant value.
 
-- **reference_voltage** (*Optional*, float): The reference voltage. Defaults to ``3.3V``.
+- **reference_voltage** (*Optional*, float): The reference voltage. Defaults to ``3.3V``. Most ESPs ADCs measure 0 - 1V so may need to be changed to ``1V``
 - **id** (*Optional*, :ref:`config-id`): Set the ID of this sensor for use in lambdas.
 - All other options from :ref:`Sensor <config-sensor>`.
 
